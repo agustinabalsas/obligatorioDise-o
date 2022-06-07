@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik";
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(255, 251, 246);
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-left: 50px;
+}
+
+header img {
+    height: 60px;
+}
+
+header nav ul li a:hover {
+    color: rgb(206, 192, 171);
+    border-bottom: 1px solid rgb(206, 192, 171);
+}
+
+/* bienvenida */
+
+#bienvenida {
+    background-image: url('../Imágenes/portada.jpg');
+    height: 600px;
+    background-size: cover;
+}
+
+#bienvenida h1,
+#bienvenida p {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bienvenida p {
+    margin-top: 26px;
+    font-size: 15px;
+    line-height: 25px;
+    background-color: rgb(242, 225, 199);
+}
+
+#bienvenida h1 {
+    font-size: 42px;
+    font-weight: bold;
+    padding-top: 360px;
+}
+
+/* promos */
+
+h2 {
+    margin: 25px 0 40px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#promos .alojamientos {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#promos .alojamiento {
+    width: 450px;
+    margin: auto;
+}
+
+#promos img {
+    object-fit: cover;
+    width: 100%;
+    height: 204px;
+}
+
+#promos p {
+    margin: 10px 0;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#promos h3 {
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+#promos .precio-boton {
+    display: flex;
+    justify-content: space-between;
+}
+
+#promos strong {
+    font-size: 12px;
+    padding: 7px 0;
+}
+
+.ampliar {
+    background-color: rgb(242, 225, 199);
+    padding: 7px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.ampliar:hover {
+    background-color: rgb(0, 0, 0);
+    padding: 7px 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(242, 225, 199);
+}
+
+/* fotos */
+
+#fotos {
+    margin: auto;
+    background-color: rgb(242, 225, 199);
+    height: 451px;
+}
+
+#fotos h2 {
+    margin-bottom: 25px;
+    padding-top: 26px;
+}
+
+.imagenes {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 280px 220px 220px 280px;
+    grid-template-rows: repeat(2, 150px);
+    gap: 20px;
+}
+
+.imagenes img:nth-child(1) {
+    grid-column: 1 span;
+    grid-row: 2 span;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imagenes img:nth-child(2) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imagenes img:nth-child(3) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imagenes img:nth-child(4) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1 span;
+    grid-row: 2 span;
+}
+
+.imagenes img:nth-child(5) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.imagenes img:nth-child(6) {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* alojamientos */
+
+.habitaciones {
+    width: 1110px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.below {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.below a,
+.below a:hover {
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.habitaciones img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.habitacion {
+    width: 230px;
+    height: 430px;
+}
+
+.habitacion ul li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 15px;
+    margin: 1px 0;
+}
+
+.habitacion strong {
+    font-size: 14px;
+}
+
+.habitacion h3 {
+    margin: 10px 0;
+}
+
+.habitacion p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.tarifas p {
+    font-size: 13px;
+}
+
+/* reservas */
+
+#reservas {
+    background-color: rgb(242, 225, 199);
+    padding: 16px 0;
+}
+
+#reservas h2 {
+    margin: 10px 0 15px 0;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+}
+
+#reservas .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="number"] {
+    border: none;
+    padding: 10px;
+    width: 192px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    padding: 8px 27px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+input[type="submit"]:hover {
+    color: rgb(225, 225, 225);
+    background-color: rgb(0, 0, 0);
+}
+
+/* footer */
+
+footer nav {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(225, 225, 225);
+}
+
+nav section ul li a img {
+    width: 51px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: -20px;
+}
+
+nav section ul li a img:hover {
+    width: 55px;
+    height: 45px;
+}
+
+
